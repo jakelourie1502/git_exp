@@ -1,6 +1,9 @@
 import numpy as np
 import pandas
 import matplotlib as plt
+import sys
+
+print(sys.path)
 
 a = 1
 b = a+2
