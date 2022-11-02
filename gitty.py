@@ -17,3 +17,10 @@ def plus_two(x):
 
 x = sigmoid(plus_two(np.random.randint(-10, 10)))
 print(x)
+
+
+def create_random_val():
+    return np.random.randint(-10, 10)
+
+
+print(plus_two(np.sign(create_random_val())))
