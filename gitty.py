@@ -5,10 +5,25 @@ import sys
 
 print(sys.path)
 
-a = 1
-b = a+2
-c = b+2
+a = 2
+b = a+3
+c = b+3
+
+
+def sigmoid(x):
+    return np.sign(x)
 
 
 def plus_two(x):
-    return x += 2
+    return x + 2
+
+
+x = sigmoid(plus_two(np.random.randint(-10, 10)))
+print(x)
+
+
+def create_random_val():
+    return np.random.randint(-10, 10)
+
+
+print(plus_two(np.sign(create_random_val())))
