@@ -8,6 +8,6 @@ class me:
         self.layer2 = MONTHS
 
     def tanh(self, x):
-        return (np.exp(x)-np.exp(-x))/ (np.exp(x)+np.exp(-x))
+        return (np.exp(x*2)-np.exp(-x))/ (np.exp(x)+np.exp(-x))
 
 
